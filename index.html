@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- TODO: add metadata  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- JavaScript -->
+  <script src="./assets/js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#main" class="visually-hidden">Skip to main content</a>
+    <a href="#">
+      <img src="./assets/images/logo.svg" alt="Base Apparel logo">
+    </a>
+  </header>
+  <main class="container" id="main">
+    <div class="apparel__text-group grid">
+      <h1 class="apparel__title">
+        <span> We're</span> coming soon
+      </h1>
+      <p class="apparel__description"> Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <form action="#" class="email__form" data-js-form novalidate>
+        <label for="email__input" class="visually-hidden"> Enter your Email Address</label>
+        <input type="email" id="email__input" class="email__input" placeholder="" data-js-email name="email"
+          autocomplete="email" minlength="5" maxlength="50">
+        <button class="submit__btn" aria-label="send email to be notified">
+          <img src="./assets/images/icon-arrow.svg" width="12" height="20" alt="" aria-hidden="true">
+        </button>
+        <img class="error__icon" src="./assets/images/icon-error.svg" width="24" height="24" alt="" aria-hidden="true">
+        <p class="error__message" aria-live="polite" data-js-error></p>
+        <p class="success__message" data-js-success>Thank you for subscribing!!</p>
+      </form>
+    </div>
+    <picture class="showcase">
+      <source media="(min-width: 75em)" srcset="./assets/images/hero-desktop.jpg">
+      <img src="./assets/images/hero-mobile.jpg" width="375" height="275"
+        alt="woman standing in front of a green tree and a red wall">
+    </picture>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Rebecca Padgett</a>.
+    </p>
+  </footer>
+
+
+</body>
+
+</html>
