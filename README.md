@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
-- Live Site URL: [Github Pages]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-flexbox-zi56OadDWP)
+- Live Site URL: [Github Pages](https://bccpadge.github.io/base-apparel-coming-soon-page/)
 
 ## My process
 
