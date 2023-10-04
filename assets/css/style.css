@@ -156,8 +156,6 @@ button {
 
 /* ! apparel text group styles */
 .apparel__text-group {
-  width: 100%;
-  height: auto;
   padding: var(--spacing-200) var(--spacing-100);
   text-align: center;
 }
@@ -246,8 +244,6 @@ button {
 /* !image group styles */
 .showcase img {
   width: 100%;
-  max-height: 30rem;
-  object-fit: fill;
   height: auto;
 }
 
@@ -283,6 +279,20 @@ button {
 }
 
 /* !media query */
+@media (min-width: 60em) {
+  .container > * {
+    flex-basis: 95%;
+  }
+
+  .apparel__title {
+    letter-spacing: 0.9375rem;
+  }
+
+  .attribution {
+    display: none;
+  }
+}
+
 @media (min-width: 75em) {
   .header {
     position: absolute;
@@ -291,10 +301,9 @@ button {
 
   .container {
     flex-direction: row;
-  }
-
-  .container > * {
-    flex-basis: 95%;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
   }
 
   .apparel__text-group {
@@ -302,25 +311,15 @@ button {
     padding: 20vh 10% 1.25rem 10%;
   }
 
-  .apparel__title {
-    letter-spacing: 0.9375rem;
-  }
-
   .apparel__description {
     margin-inline: 0;
-  }
-
-  .showcase picture,
-  .showcase img {
-    max-height: none;
-    height: 100vh;
   }
 
   .email__form {
     max-width: 35ch;
   }
 
-  .attribution {
-    display: none;
+  .showcase {
+    align-self: flex-start;
   }
 }
